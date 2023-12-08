@@ -31,13 +31,14 @@ TODO: Add long description of the pod here.
   s.swift_versions = '5.0'
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'CCSwiftBase/Classes/**/*'
+  s.source_files = 'CCSwiftBase/Sources/*.swift'
   
   # s.resource_bundles = {
   #   'CCSwiftBase' => ['CCSwiftBase/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.requires_arc = true
    s.frameworks = 'UIKit'
    s.dependency 'SnapKit'
 

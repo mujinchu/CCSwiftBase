@@ -145,48 +145,27 @@
 			path = "Example/Pods/Target Support Files/CCSwiftBase";
 			sourceTree = "<group>";
 		};
-		4221AE692B21F0C9004DA637 /* extension */ = {
+		4221AE912B2367AA004DA637 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				4221AE6A2B21F2F8004DA637 /* CC.swift */,
+				4221AE892B222598004DA637 /* CCActionProtocol.swift */,
+				4221AE822B2221B9004DA637 /* CCActionSheetAlertView.swift */,
+				4221AE8B2B2337D5004DA637 /* CCCompleteHandler.swift */,
+				4221AE872B2224DF004DA637 /* CCEnumProtocol.swift */,
 				4221AE7A2B2204AD004DA637 /* CCNSObject.swift */,
-				4221AE7E2B22084A004DA637 /* view */,
-			);
-			path = extension;
-			sourceTree = "<group>";
-		};
-		4221AE7E2B22084A004DA637 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				4221AE6C2B21F374004DA637 /* CCUIView.swift */,
+				4221AE762B220278004DA637 /* CCUIButton.swift */,
+				4221AE782B22046F004DA637 /* CCUICollectionView.swift */,
 				4221AE6E2B21F565004DA637 /* CCUIColor.swift */,
-				4221AE702B21FE64004DA637 /* CCUILabel.swift */,
+				4221AE842B222202004DA637 /* CCUIDevice.swift */,
 				4221AE722B220117004DA637 /* CCUIImage.swift */,
 				4221AE742B2201C1004DA637 /* CCUIImageView.swift */,
-				4221AE762B220278004DA637 /* CCUIButton.swift */,
+				4221AE702B21FE64004DA637 /* CCUILabel.swift */,
 				4221AE7C2B220819004DA637 /* CCUITableView.swift */,
-				4221AE782B22046F004DA637 /* CCUICollectionView.swift */,
+				4221AE6C2B21F374004DA637 /* CCUIView.swift */,
 				4221AE7F2B221ED8004DA637 /* CCUIViewController.swift */,
-				4221AE842B222202004DA637 /* CCUIDevice.swift */,
 			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		4221AE812B222197004DA637 /* alert */ = {
-			isa = PBXGroup;
-			children = (
-				4221AE822B2221B9004DA637 /* CCActionSheetAlertView.swift */,
-			);
-			path = alert;
-			sourceTree = "<group>";
-		};
-		4221AE862B2224A2004DA637 /* protocol */ = {
-			isa = PBXGroup;
-			children = (
-				4221AE872B2224DF004DA637 /* CCEnumProtocol.swift */,
-				4221AE892B222598004DA637 /* CCActionProtocol.swift */,
-			);
-			path = protocol;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		4727988B46B2BEE9347494AC9F8740E4 /* Targets Support Files */ = {
@@ -270,10 +249,7 @@
 		B97A353E417DF64056142B55498FC4E3 /* CCSwiftBase */ = {
 			isa = PBXGroup;
 			children = (
-				4221AE8B2B2337D5004DA637 /* CCCompleteHandler.swift */,
-				4221AE862B2224A2004DA637 /* protocol */,
-				4221AE812B222197004DA637 /* alert */,
-				4221AE692B21F0C9004DA637 /* extension */,
+				4221AE912B2367AA004DA637 /* Sources */,
 				805689DC98BF07808C403B824BC5E5E5 /* Pod */,
 				308C0513FE2537B6F225987945BB260C /* Support Files */,
 			);
