@@ -1,0 +1,6 @@
+framework module CCSwiftBase {
+  umbrella header "CCSwiftBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

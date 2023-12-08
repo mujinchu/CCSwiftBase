@@ -1,0 +1,16 @@
+PODS:
+  - CCSwiftBase (0.1.0)
+
+DEPENDENCIES:
+  - CCSwiftBase (from `../`)
+
+EXTERNAL SOURCES:
+  CCSwiftBase:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CCSwiftBase: 28ccc589210e024a8ad6cde012e846876d6dcc62
+
+PODFILE CHECKSUM: 5b03b620d723e3965b5e28cafae36ed8060f1544
+
+COCOAPODS: 1.12.1

@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CCSwiftBase
 
 class ViewController: UIViewController {
 
+    lazy var viewA = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
