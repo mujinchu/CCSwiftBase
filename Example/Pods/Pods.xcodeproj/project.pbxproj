@@ -11,22 +11,22 @@
 		0E84D7FF86629FD9673422A4C1EE80C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		31CDA90EA11BF4115D5204799CE3A92C /* Pods-CCSwiftBase_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D4E8117C01512CC9E3112332B548F2 /* Pods-CCSwiftBase_Tests-dummy.m */; };
 		3471CD6966852D2B47945BBF3357465B /* Pods-CCSwiftBase_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F3B6EA90B7BC2F60EA187B09C6637C /* Pods-CCSwiftBase_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4221AE6B2B21F2F8004DA637 /* CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE6A2B21F2F8004DA637 /* CC.swift */; };
-		4221AE6D2B21F374004DA637 /* CCUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE6C2B21F374004DA637 /* CCUIView.swift */; };
-		4221AE6F2B21F565004DA637 /* CCUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE6E2B21F565004DA637 /* CCUIColor.swift */; };
-		4221AE712B21FE64004DA637 /* CCUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE702B21FE64004DA637 /* CCUILabel.swift */; };
-		4221AE732B220117004DA637 /* CCUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE722B220117004DA637 /* CCUIImage.swift */; };
-		4221AE752B2201C1004DA637 /* CCUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE742B2201C1004DA637 /* CCUIImageView.swift */; };
-		4221AE772B220278004DA637 /* CCUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE762B220278004DA637 /* CCUIButton.swift */; };
-		4221AE792B22046F004DA637 /* CCUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE782B22046F004DA637 /* CCUICollectionView.swift */; };
-		4221AE7B2B2204AD004DA637 /* CCNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE7A2B2204AD004DA637 /* CCNSObject.swift */; };
-		4221AE7D2B220819004DA637 /* CCUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE7C2B220819004DA637 /* CCUITableView.swift */; };
-		4221AE802B221ED8004DA637 /* CCUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE7F2B221ED8004DA637 /* CCUIViewController.swift */; };
-		4221AE832B2221B9004DA637 /* CCActionSheetAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE822B2221B9004DA637 /* CCActionSheetAlertView.swift */; };
-		4221AE852B222202004DA637 /* CCUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE842B222202004DA637 /* CCUIDevice.swift */; };
-		4221AE882B2224DF004DA637 /* CCEnumProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE872B2224DF004DA637 /* CCEnumProtocol.swift */; };
-		4221AE8A2B222598004DA637 /* CCActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE892B222598004DA637 /* CCActionProtocol.swift */; };
-		4221AE8C2B2337D5004DA637 /* CCCompleteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE8B2B2337D5004DA637 /* CCCompleteHandler.swift */; };
+		4221AEA32B2369F5004DA637 /* CCUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE932B2369F5004DA637 /* CCUITableView.swift */; };
+		4221AEA42B2369F5004DA637 /* CCUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE942B2369F5004DA637 /* CCUIButton.swift */; };
+		4221AEA52B2369F5004DA637 /* CCUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE952B2369F5004DA637 /* CCUIImage.swift */; };
+		4221AEA62B2369F5004DA637 /* CC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE962B2369F5004DA637 /* CC.swift */; };
+		4221AEA72B2369F5004DA637 /* CCUIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE972B2369F5004DA637 /* CCUIDevice.swift */; };
+		4221AEA82B2369F5004DA637 /* CCCompleteHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE982B2369F5004DA637 /* CCCompleteHandler.swift */; };
+		4221AEA92B2369F5004DA637 /* CCActionSheetAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE992B2369F5004DA637 /* CCActionSheetAlertView.swift */; };
+		4221AEAA2B2369F5004DA637 /* CCUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE9A2B2369F5004DA637 /* CCUIImageView.swift */; };
+		4221AEAB2B2369F5004DA637 /* CCUILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE9B2B2369F5004DA637 /* CCUILabel.swift */; };
+		4221AEAC2B2369F5004DA637 /* CCUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE9C2B2369F5004DA637 /* CCUIView.swift */; };
+		4221AEAD2B2369F5004DA637 /* CCUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE9D2B2369F5004DA637 /* CCUIColor.swift */; };
+		4221AEAE2B2369F5004DA637 /* CCNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE9E2B2369F5004DA637 /* CCNSObject.swift */; };
+		4221AEAF2B2369F5004DA637 /* CCUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AE9F2B2369F5004DA637 /* CCUICollectionView.swift */; };
+		4221AEB02B2369F5004DA637 /* CCActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AEA02B2369F5004DA637 /* CCActionProtocol.swift */; };
+		4221AEB12B2369F5004DA637 /* CCEnumProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AEA12B2369F5004DA637 /* CCEnumProtocol.swift */; };
+		4221AEB22B2369F5004DA637 /* CCUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4221AEA22B2369F5004DA637 /* CCUIViewController.swift */; };
 		4CF86336A621BE54E591CCA2125ACBF3 /* Pods-CCSwiftBase_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50726FF0AF0A5F80EDB95DB4104ABC36 /* Pods-CCSwiftBase_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		515C83095F91D411FC5CDBE2E20F7989 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C1605B9516804DC2480AED995EBD17E0 /* Pods-CCSwiftBase_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A52E847E2D76E48F858575B83F711F4E /* Pods-CCSwiftBase_Example-dummy.m */; };
@@ -61,22 +61,22 @@
 		28890B498A34DBBD67A9E5714F43B2AC /* CCSwiftBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CCSwiftBase-dummy.m"; sourceTree = "<group>"; };
 		3C0361D25BE62CEFAB6350838DDBCFD1 /* Pods-CCSwiftBase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCSwiftBase_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3CD572B64C65DF4FE8A9795C5DAE63C2 /* Pods-CCSwiftBase_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCSwiftBase_Tests-Info.plist"; sourceTree = "<group>"; };
-		4221AE6A2B21F2F8004DA637 /* CC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC.swift; sourceTree = "<group>"; };
-		4221AE6C2B21F374004DA637 /* CCUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIView.swift; sourceTree = "<group>"; };
-		4221AE6E2B21F565004DA637 /* CCUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIColor.swift; sourceTree = "<group>"; };
-		4221AE702B21FE64004DA637 /* CCUILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUILabel.swift; sourceTree = "<group>"; };
-		4221AE722B220117004DA637 /* CCUIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIImage.swift; sourceTree = "<group>"; };
-		4221AE742B2201C1004DA637 /* CCUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIImageView.swift; sourceTree = "<group>"; };
-		4221AE762B220278004DA637 /* CCUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIButton.swift; sourceTree = "<group>"; };
-		4221AE782B22046F004DA637 /* CCUICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUICollectionView.swift; sourceTree = "<group>"; };
-		4221AE7A2B2204AD004DA637 /* CCNSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCNSObject.swift; sourceTree = "<group>"; };
-		4221AE7C2B220819004DA637 /* CCUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUITableView.swift; sourceTree = "<group>"; };
-		4221AE7F2B221ED8004DA637 /* CCUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIViewController.swift; sourceTree = "<group>"; };
-		4221AE822B2221B9004DA637 /* CCActionSheetAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCActionSheetAlertView.swift; sourceTree = "<group>"; };
-		4221AE842B222202004DA637 /* CCUIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCUIDevice.swift; sourceTree = "<group>"; };
-		4221AE872B2224DF004DA637 /* CCEnumProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCEnumProtocol.swift; sourceTree = "<group>"; };
-		4221AE892B222598004DA637 /* CCActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCActionProtocol.swift; sourceTree = "<group>"; };
-		4221AE8B2B2337D5004DA637 /* CCCompleteHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCompleteHandler.swift; sourceTree = "<group>"; };
+		4221AE932B2369F5004DA637 /* CCUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUITableView.swift; sourceTree = "<group>"; };
+		4221AE942B2369F5004DA637 /* CCUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIButton.swift; sourceTree = "<group>"; };
+		4221AE952B2369F5004DA637 /* CCUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIImage.swift; sourceTree = "<group>"; };
+		4221AE962B2369F5004DA637 /* CC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CC.swift; sourceTree = "<group>"; };
+		4221AE972B2369F5004DA637 /* CCUIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIDevice.swift; sourceTree = "<group>"; };
+		4221AE982B2369F5004DA637 /* CCCompleteHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCCompleteHandler.swift; sourceTree = "<group>"; };
+		4221AE992B2369F5004DA637 /* CCActionSheetAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCActionSheetAlertView.swift; sourceTree = "<group>"; };
+		4221AE9A2B2369F5004DA637 /* CCUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIImageView.swift; sourceTree = "<group>"; };
+		4221AE9B2B2369F5004DA637 /* CCUILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUILabel.swift; sourceTree = "<group>"; };
+		4221AE9C2B2369F5004DA637 /* CCUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIView.swift; sourceTree = "<group>"; };
+		4221AE9D2B2369F5004DA637 /* CCUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIColor.swift; sourceTree = "<group>"; };
+		4221AE9E2B2369F5004DA637 /* CCNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCNSObject.swift; sourceTree = "<group>"; };
+		4221AE9F2B2369F5004DA637 /* CCUICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUICollectionView.swift; sourceTree = "<group>"; };
+		4221AEA02B2369F5004DA637 /* CCActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCActionProtocol.swift; sourceTree = "<group>"; };
+		4221AEA12B2369F5004DA637 /* CCEnumProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCEnumProtocol.swift; sourceTree = "<group>"; };
+		4221AEA22B2369F5004DA637 /* CCUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCUIViewController.swift; sourceTree = "<group>"; };
 		50726FF0AF0A5F80EDB95DB4104ABC36 /* Pods-CCSwiftBase_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CCSwiftBase_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6F354CDE48C52E29628464B2EA8A62BF /* Pods-CCSwiftBase_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CCSwiftBase_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		719674E12EF77539D0884C3BF689065C /* Pods-CCSwiftBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CCSwiftBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,27 +145,28 @@
 			path = "Example/Pods/Target Support Files/CCSwiftBase";
 			sourceTree = "<group>";
 		};
-		4221AE912B2367AA004DA637 /* Sources */ = {
+		4221AE922B2369F5004DA637 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4221AE6A2B21F2F8004DA637 /* CC.swift */,
-				4221AE892B222598004DA637 /* CCActionProtocol.swift */,
-				4221AE822B2221B9004DA637 /* CCActionSheetAlertView.swift */,
-				4221AE8B2B2337D5004DA637 /* CCCompleteHandler.swift */,
-				4221AE872B2224DF004DA637 /* CCEnumProtocol.swift */,
-				4221AE7A2B2204AD004DA637 /* CCNSObject.swift */,
-				4221AE762B220278004DA637 /* CCUIButton.swift */,
-				4221AE782B22046F004DA637 /* CCUICollectionView.swift */,
-				4221AE6E2B21F565004DA637 /* CCUIColor.swift */,
-				4221AE842B222202004DA637 /* CCUIDevice.swift */,
-				4221AE722B220117004DA637 /* CCUIImage.swift */,
-				4221AE742B2201C1004DA637 /* CCUIImageView.swift */,
-				4221AE702B21FE64004DA637 /* CCUILabel.swift */,
-				4221AE7C2B220819004DA637 /* CCUITableView.swift */,
-				4221AE6C2B21F374004DA637 /* CCUIView.swift */,
-				4221AE7F2B221ED8004DA637 /* CCUIViewController.swift */,
+				4221AE932B2369F5004DA637 /* CCUITableView.swift */,
+				4221AE942B2369F5004DA637 /* CCUIButton.swift */,
+				4221AE952B2369F5004DA637 /* CCUIImage.swift */,
+				4221AE962B2369F5004DA637 /* CC.swift */,
+				4221AE972B2369F5004DA637 /* CCUIDevice.swift */,
+				4221AE982B2369F5004DA637 /* CCCompleteHandler.swift */,
+				4221AE992B2369F5004DA637 /* CCActionSheetAlertView.swift */,
+				4221AE9A2B2369F5004DA637 /* CCUIImageView.swift */,
+				4221AE9B2B2369F5004DA637 /* CCUILabel.swift */,
+				4221AE9C2B2369F5004DA637 /* CCUIView.swift */,
+				4221AE9D2B2369F5004DA637 /* CCUIColor.swift */,
+				4221AE9E2B2369F5004DA637 /* CCNSObject.swift */,
+				4221AE9F2B2369F5004DA637 /* CCUICollectionView.swift */,
+				4221AEA02B2369F5004DA637 /* CCActionProtocol.swift */,
+				4221AEA12B2369F5004DA637 /* CCEnumProtocol.swift */,
+				4221AEA22B2369F5004DA637 /* CCUIViewController.swift */,
 			);
-			path = Sources;
+			name = Sources;
+			path = CCSwiftBase/Sources;
 			sourceTree = "<group>";
 		};
 		4727988B46B2BEE9347494AC9F8740E4 /* Targets Support Files */ = {
@@ -249,7 +250,7 @@
 		B97A353E417DF64056142B55498FC4E3 /* CCSwiftBase */ = {
 			isa = PBXGroup;
 			children = (
-				4221AE912B2367AA004DA637 /* Sources */,
+				4221AE922B2369F5004DA637 /* Sources */,
 				805689DC98BF07808C403B824BC5E5E5 /* Pod */,
 				308C0513FE2537B6F225987945BB260C /* Support Files */,
 			);
@@ -425,23 +426,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4221AEB02B2369F5004DA637 /* CCActionProtocol.swift in Sources */,
+				4221AEA42B2369F5004DA637 /* CCUIButton.swift in Sources */,
+				4221AEAD2B2369F5004DA637 /* CCUIColor.swift in Sources */,
+				4221AEA52B2369F5004DA637 /* CCUIImage.swift in Sources */,
 				FA6AE98D5DD5C72E3D58F21B108195D0 /* CCSwiftBase-dummy.m in Sources */,
-				4221AE8C2B2337D5004DA637 /* CCCompleteHandler.swift in Sources */,
-				4221AE7D2B220819004DA637 /* CCUITableView.swift in Sources */,
-				4221AE802B221ED8004DA637 /* CCUIViewController.swift in Sources */,
-				4221AE792B22046F004DA637 /* CCUICollectionView.swift in Sources */,
-				4221AE752B2201C1004DA637 /* CCUIImageView.swift in Sources */,
-				4221AE882B2224DF004DA637 /* CCEnumProtocol.swift in Sources */,
-				4221AE6F2B21F565004DA637 /* CCUIColor.swift in Sources */,
-				4221AE8A2B222598004DA637 /* CCActionProtocol.swift in Sources */,
-				4221AE772B220278004DA637 /* CCUIButton.swift in Sources */,
-				4221AE852B222202004DA637 /* CCUIDevice.swift in Sources */,
-				4221AE832B2221B9004DA637 /* CCActionSheetAlertView.swift in Sources */,
-				4221AE6D2B21F374004DA637 /* CCUIView.swift in Sources */,
-				4221AE732B220117004DA637 /* CCUIImage.swift in Sources */,
-				4221AE712B21FE64004DA637 /* CCUILabel.swift in Sources */,
-				4221AE6B2B21F2F8004DA637 /* CC.swift in Sources */,
-				4221AE7B2B2204AD004DA637 /* CCNSObject.swift in Sources */,
+				4221AEA62B2369F5004DA637 /* CC.swift in Sources */,
+				4221AEA32B2369F5004DA637 /* CCUITableView.swift in Sources */,
+				4221AEAA2B2369F5004DA637 /* CCUIImageView.swift in Sources */,
+				4221AEAC2B2369F5004DA637 /* CCUIView.swift in Sources */,
+				4221AEA72B2369F5004DA637 /* CCUIDevice.swift in Sources */,
+				4221AEA82B2369F5004DA637 /* CCCompleteHandler.swift in Sources */,
+				4221AEAB2B2369F5004DA637 /* CCUILabel.swift in Sources */,
+				4221AEB22B2369F5004DA637 /* CCUIViewController.swift in Sources */,
+				4221AEB12B2369F5004DA637 /* CCEnumProtocol.swift in Sources */,
+				4221AEAE2B2369F5004DA637 /* CCNSObject.swift in Sources */,
+				4221AEAF2B2369F5004DA637 /* CCUICollectionView.swift in Sources */,
+				4221AEA92B2369F5004DA637 /* CCActionSheetAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
