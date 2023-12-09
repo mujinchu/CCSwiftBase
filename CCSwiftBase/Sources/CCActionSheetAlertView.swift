@@ -7,12 +7,14 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class CCActionSheetAlertView<T: CCEnumProtocol>: UIView, UITableViewDelegate, UITableViewDataSource {
     // MARK: - present
     static func present(with actions: [T], title: String? = nil, text: String? = nil, completion: @escaping CCCompleteHandler<T>) {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let window = windowScene.windows.first else { return }
         let alertView = CCActionSheetAlertView(actions: actions, title: title, text: text, completion: completion)
-//        shared.showPresentView(alertView, isCover: true)
+        window.addSubview(alertView)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
             alertView.show()
         }
@@ -130,18 +132,18 @@ class CCActionSheetAlertView<T: CCEnumProtocol>: UIView, UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = sections[indexPath.section]
         let cell: CCActionSheetAlertTableViewCell = tableView.cc.dequeueReusableCell()
-//        switch item {
-//        case .title_section:
-//            cell.setText(title, font: UIFont.cc.)
-//            break
-//        case .desc_section:
-//            cell.setText(descText, font: .font(13))
-//            break
-//        case .action_section:
-//            let action = actions[indexPath.row]
-//            cell.setText(action.description)
-//            break
-//        }
+        switch item {
+        case .title_section:
+            cell.setText(title, font: .cc.font(16, weight: .medium))
+            break
+        case .desc_section:
+            cell.setText(descText, font: .cc.font(13))
+            break
+        case .action_section:
+            let action = actions[indexPath.row]
+            cell.setText(action.description, font: .cc.font(17))
+            break
+        }
         
         return cell
     }
@@ -157,26 +159,26 @@ class CCActionSheetAlertView<T: CCEnumProtocol>: UIView, UITableViewDelegate, UI
 
 extension CCActionSheetAlertView {
     private func show() {
-//        contentView.snp.remakeConstraints { make in
-//            make.left.right.bottom.equalToSuperview()
-//        }
-//        UIView.animate(withDuration: 0.25) {
-//            self.alpha = 1
-//            self.layoutIfNeeded()
-//        } completion: { _ in }
+        contentView.snp.remakeConstraints { make in
+            make.left.right.bottom.equalToSuperview()
+        }
+        UIView.animate(withDuration: 0.25) {
+            self.alpha = 1
+            self.layoutIfNeeded()
+        } completion: { _ in }
     }
     
     private func dismiss() {
-//        contentView.snp.remakeConstraints { make in
-//            make.left.right.equalToSuperview()
-//            make.top.equalTo(self.snp.bottom).offset(0)
-//        }
-//        UIView.animate(withDuration: 0.25) {
-//            self.alpha = 0
-//            self.layoutIfNeeded()
-//        } completion: { _ in
-//            self.removeFromSuperview()
-//        }
+        contentView.snp.remakeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(self.snp.bottom).offset(0)
+        }
+        UIView.animate(withDuration: 0.25) {
+            self.alpha = 0
+            self.layoutIfNeeded()
+        } completion: { _ in
+            self.removeFromSuperview()
+        }
     }
 }
 
@@ -186,33 +188,29 @@ extension CCActionSheetAlertView {
         contentView.addSubview(tableView)
         contentView.addSubview(lineView)
         contentView.addSubview(cancelButton)
+
+        contentView.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(self.snp.bottom).offset(0)
+        }
         
-        NSLayoutConstraint.activate([
-            contentView.topAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
-            contentView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
-            contentView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
-            contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
-        ])
-        NSLayoutConstraint.activate([
-            
-        ])
-//        tableView.snp.makeConstraints { make in
-//            make.left.top.right.equalToSuperview()
-//            make.height.equalTo(0)
-//        }
-//        
-//        lineView.snp.makeConstraints { make in
-//            make.left.right.equalToSuperview()
-//            make.top.equalTo(tableView.snp.bottom).offset(0)
-//            make.height.equalTo(6)
-//        }
-//        
-//        cancelButton.snp.makeConstraints { make in
-//            make.left.right.equalToSuperview()
-//            make.top.equalTo(lineView.snp.bottom).offset(0)
-//            make.height.equalTo(60)
-//            make.bottom.equalToSuperview().offset(-SAFE_BOTTOM)
-//        }
+        tableView.snp.makeConstraints { make in
+            make.left.top.right.equalToSuperview()
+            make.height.equalTo(0)
+        }
+        
+        lineView.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(tableView.snp.bottom).offset(0)
+            make.height.equalTo(6)
+        }
+        
+        cancelButton.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.top.equalTo(lineView.snp.bottom).offset(0)
+            make.height.equalTo(60)
+            make.bottom.equalToSuperview().offset(-CC_SAFE_BOTTOM)
+        }
         
         contentView.layer.cornerRadius = 12
         contentView.layer.masksToBounds = true
@@ -223,7 +221,7 @@ extension CCActionSheetAlertView {
 class CCActionSheetAlertTableViewCell: UITableViewCell {
     lazy var titleLabel = UILabel().numberOfLines(0).textAlignment(.center).textColor(0x333333)
     
-    func setText(_ text: String?, font: UIFont = UIFont.systemFont(ofSize: 17)) {
+    func setText(_ text: String?, font: UIFont) {
         titleLabel.text = text
         titleLabel.font = font
     }
@@ -232,15 +230,10 @@ class CCActionSheetAlertTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         contentView.addSubview(titleLabel)
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-            titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
-            titleLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20)
-        ])
+                
+        titleLabel.snp.makeConstraints { make in
+            make.edges.equalToSuperview().inset(20)
+        }
     }
     
     required init?(coder: NSCoder) {

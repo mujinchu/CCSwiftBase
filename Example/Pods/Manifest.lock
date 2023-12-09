@@ -1,15 +1,22 @@
 PODS:
-  - CCSwiftBase (0.1.0)
+  - CCSwiftBase (0.0.1):
+    - SnapKit
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - CCSwiftBase (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   CCSwiftBase:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CCSwiftBase: 28ccc589210e024a8ad6cde012e846876d6dcc62
+  CCSwiftBase: b8675d23de3dc8d99b3854841901f530c904bf84
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
 PODFILE CHECKSUM: 5b03b620d723e3965b5e28cafae36ed8060f1544
 

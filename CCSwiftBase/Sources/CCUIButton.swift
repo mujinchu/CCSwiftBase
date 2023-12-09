@@ -40,7 +40,7 @@ extension UIButton {
     
     @discardableResult
     func font(_ value: CGFloat, weight: UIFont.Weight) -> Self {
-        titleLabel?.font = UIFont.systemFont(ofSize: value, weight: weight)
+        titleLabel?.font = UIFont.cc.font(value, weight: weight)
         return self
     }
 

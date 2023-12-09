@@ -18,36 +18,36 @@ extension NSObject {
     static var className: String {
         return String(describing: self)
     }
-    
-    var window: UIWindow? {
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let window = windowScene.windows.first else { return nil }
-        return window
-    }
-    
-    var currentViewController: UIViewController? {
-        get {
-            guard let window = window else { return nil }
+}
 
-            var vc = window.rootViewController
-            while true {
-                if (vc?.isKind(of: UITabBarController.classForCoder()))! {
-                    let newVc = vc as! UITabBarController
-                    vc = newVc.selectedViewController
-                }
-                
-                if (vc?.isKind(of: UINavigationController.classForCoder()))! {
-                    let newVc = vc as! UINavigationController
-                    vc = newVc.visibleViewController
-                }
-                
-                if vc?.presentedViewController != nil {
-                    vc = vc?.presentedViewController
-                } else {
-                    break
-                }
+var window: UIWindow? {
+    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let window = windowScene.windows.first else { return nil }
+    return window
+}
+
+var currentViewController: UIViewController? {
+    get {
+        guard let window = window else { return nil }
+
+        var vc = window.rootViewController
+        while true {
+            if (vc?.isKind(of: UITabBarController.classForCoder()))! {
+                let newVc = vc as! UITabBarController
+                vc = newVc.selectedViewController
             }
-            return vc
+            
+            if (vc?.isKind(of: UINavigationController.classForCoder()))! {
+                let newVc = vc as! UINavigationController
+                vc = newVc.visibleViewController
+            }
+            
+            if vc?.presentedViewController != nil {
+                vc = vc?.presentedViewController
+            } else {
+                break
+            }
         }
+        return vc
     }
 }
 

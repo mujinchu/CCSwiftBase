@@ -40,7 +40,7 @@ extension UILabel {
     
     @discardableResult
     func font(_ fontSize: CGFloat, weight: UIFont.Weight = .regular) -> Self {
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: weight)
+        self.font = UIFont.cc.font(fontSize, weight: weight)
         return self
     }
         
@@ -63,7 +63,7 @@ extension UILabel {
     }
     
     @discardableResult
-    func attributes(with text: String?, font: UIFont, foregroundColor: UIColor, lineSpace: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byWordWrapping, deleteLine: Bool = false) -> Self {
+    func attributes(with text: String?, font: UIFont, foregroundColor: UIColor, lineSpace: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byWordWrapping, underline: Bool = false) -> Self {
         guard let text = text else { return self }
         
         let paraph = NSMutableParagraphStyle()
@@ -74,7 +74,7 @@ extension UILabel {
         var attributes: [NSAttributedString.Key: Any] = [.font: font,
                                                          .foregroundColor: foregroundColor,
                                                          .paragraphStyle: paraph]
-        if deleteLine {
+        if underline {
             attributes[.underlineStyle] = NSUnderlineStyle.single.rawValue
             attributes[.underlineColor] = foregroundColor
         }
@@ -85,7 +85,7 @@ extension UILabel {
 }
 
 extension CC where Base: UILabel {
-    func addAttribute(with string: String?, font: UIFont, foregroundColor: UIColor, lineSpace: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byWordWrapping, deleteLine: Bool = false) {
-        base.attributes(with: string, font: font, foregroundColor: foregroundColor, lineSpace: lineSpace, alignment: alignment, lineBreakMode: lineBreakMode, deleteLine: deleteLine)
+    func addAttribute(with string: String?, font: UIFont, foregroundColor: UIColor, lineSpace: CGFloat, alignment: NSTextAlignment = .natural, lineBreakMode: NSLineBreakMode = .byWordWrapping, underline: Bool = false) {
+        base.attributes(with: string, font: font, foregroundColor: foregroundColor, lineSpace: lineSpace, alignment: alignment, lineBreakMode: lineBreakMode, underline: underline)
     }
 }

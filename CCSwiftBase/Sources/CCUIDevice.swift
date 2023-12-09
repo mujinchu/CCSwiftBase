@@ -49,3 +49,21 @@ extension CC where Base == UIDevice {
         return tabBarHeight + safeAreaBottom
     }
 }
+
+let CC_SCREEN_SIZE = UIScreen.main.bounds.size
+let CC_SCREEN_WIDTH = CC_SCREEN_SIZE.width
+let CC_SCREEN_HEIGHT = CC_SCREEN_SIZE.height
+
+let CC_STATUS_HEIGHT: CGFloat = UIDevice.cc.statusBarHeight
+
+let CC_SAFE_BOTTOM: CGFloat = UIDevice.cc.safeAreaBottom
+
+let CC_SAFE_BOTTOM_OFFSET: CGFloat = UIDevice.cc.safeAreaBottom > 0 ? UIDevice.cc.safeAreaBottom : 10
+
+let CC_NAVBAR_HEIGHT: CGFloat = UIDevice.cc.navigationBarHeight
+
+let CC_NAVBAR_FULL_HEIGHT: CGFloat = UIDevice.cc.navigationFullHeight
+
+let CC_TABBAR_FULL_HEIGHT: CGFloat = UIDevice.cc.tabBarFullHeight
+
+let CC_VIEW_HEIGHT: CGFloat = CC_SCREEN_HEIGHT - CC_NAVBAR_FULL_HEIGHT - CC_TABBAR_FULL_HEIGHT
